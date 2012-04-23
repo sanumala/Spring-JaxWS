@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <artifactId>spring-jaxws</artifactId>
+        <groupId>com.sanumala</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <groupId>com.sanumala</groupId>
+    <artifactId>spring-jaxws-webapp</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>war</packaging>
+    <name>spring-jaxws-webapp Maven Webapp</name>
+    <url>http://maven.apache.org</url>
+    <build>
+        <finalName>spring-jaxws-webapp</finalName>
+        <plugins>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <version>2.3.2</version>
+            <configuration>
+                <source>1.6</source>
+                <target>1.6</target>
+            </configuration>
+        </plugin>
+        </plugins>
+    </build>
+    <reporting>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-checkstyle-plugin</artifactId>
+                <configuration>
+                    <configLocation>config/sun_checks.xml</configLocation>
+                </configuration>
+            </plugin>
+        </plugins>
+    </reporting>
+</project>

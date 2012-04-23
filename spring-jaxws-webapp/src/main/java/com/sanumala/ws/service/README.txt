@@ -1,0 +1,1 @@
+Package for JAX-WS Web services.

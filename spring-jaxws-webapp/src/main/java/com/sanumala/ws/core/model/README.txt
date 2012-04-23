@@ -1,0 +1,1 @@
+Package for POJO's --> Each database table will have one pojo.

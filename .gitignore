@@ -1,0 +1,4 @@
+#Netbeans specific cache files
+catalog.xml
+#Maven generated target assets and class files
+*/target/*

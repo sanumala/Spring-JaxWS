@@ -1,0 +1,1 @@
+DTO's which are used to capture  from data from fornt-end i.e from JSP's via Controllers

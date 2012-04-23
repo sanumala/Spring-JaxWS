@@ -1,0 +1,20 @@
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+    <display-name>Spring JAXWS Webapplication</display-name>
+    
+    <!-- Configure servlet and its url mapping -->
+    <servlet>
+        <servlet-name>jaxws-servlet</servlet-name>
+        <servlet-class>com.sun.xml.ws.transport.http.servlet.WSSpringServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>jaxws-servlet</servlet-name>
+        <url-pattern>/hello</url-pattern>
+    </servlet-mapping>
+    
+    <!-- Register Spring Listener -->
+    <listener>
+        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+    </listener>
+</web-app>
